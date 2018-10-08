@@ -18,11 +18,11 @@ def index():
     else:
         for x in session['info']:
             if x == "pizza":
-                x = "pumkin pie"
+                x = "pumpkin pie"
     ##########################
     #Important!
     #Fix the above code.....
-    # Session['info'] should display "pumkin pie" and NOT "pizza"
+    # Session['info'] should display "pumpkin pie" and NOT "pizza"
     #########################
     
     return render_template("index.html", info = session['info'])
